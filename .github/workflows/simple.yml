@@ -26,4 +26,11 @@ jobs:
         run: Get-Location 
       - name: Directory Bash 
         run: pwd 
-        shell: bash 
+        shell: bash
+  run-macos-commands:
+    runs-on: macos-latest
+    needs: ["run-windwos-commands"]
+    steps:
+      - name: Directory Bash 
+        run: pwd
+        shell: bash
