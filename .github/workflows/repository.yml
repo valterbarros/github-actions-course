@@ -2,3 +2,10 @@ name: Repository Dispatch
 on:
   repository_dispatch:
     types: [build]
+jobs:
+  decrypt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files
+      - run: |
+        ls
