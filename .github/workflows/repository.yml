@@ -1,8 +1,6 @@
 name: Repository Dispatch
 on:
-  push:
   repository_dispatch:
-    types: [build]
 jobs:
   decrypt:
     runs-on: ubuntu-latest
